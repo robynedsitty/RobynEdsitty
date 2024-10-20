@@ -30,6 +30,7 @@ section {
   justify-content: center;
   align-items: center;
   padding: 5vh 10vw;
+  position: relative;
 }
 
 /*nav bar---------------*/
@@ -38,8 +39,6 @@ header{
   top: 0;
   left: 0;
   width: 100vw;
-  /*
-  padding: 0 2vw;*/
   padding-top: 0.5vh;
   background-color:var(--card);
   display: flex;
@@ -55,31 +54,20 @@ nav ul{
   list-style: none;
   width: 100%;
   text-align: center;
-  /*
-  text-align: right;*/
   margin: 5px;
 }
 nav ul li{
   display: inline-block;
   margin: 2px 10px;
-  /*
-  margin: 5px 20px;*/
-  
 }
 
 /*home---------------*/
 .container-me{
   width: 150px;
   height: 250px;
-
-  /*
-  width: 300px;
-  height: 450px;*/
   position: relative;
   margin-top: 10vh;
   margin-bottom: 20px;
-  /*
-  margin-bottom: 60px;*/
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -98,33 +86,20 @@ nav ul li{
 }
 .icons {
   font-size: 30px;
-   /*
-  font-size: 40px;*/
   text-align: center;
   margin: 0 10px;
-  /*
-  margin: 0 15px;*/
 }
 
 /*about me---------------*/
 .tech-li{
-
   list-style: none;
   color: var(--text);
   font-size: 18px;
-  /*
-  font-size: 21px;*/
   display: grid;
-  grid-template-columns: 150px 150px;
-  /*
-  grid-template-columns: 170px 170px;*/
+  grid-template-columns: 170px 170px;
   justify-content: space-between;
-  width: 90vw;
-  /*
-  width: 300px;*/
+  width: 50vw;
   line-height: 30px;
-  /*
-  line-height: 32px;*/
   padding-top: 15px;
 }
 .tech-li-icon{
@@ -138,10 +113,13 @@ nav ul li{
   list-style: none;
   min-height: 100vh;
 }
+.container-exp{
+  width: 291px;
+  height: 157px;
+  position: relative;
+}
 .bpvip{
   display: flex;
-  /*
-  display: flex;*/
   margin-left: auto;
   margin-right: 0;
   align-items: center;
@@ -150,11 +128,9 @@ nav ul li{
 .bpvip-items {
   align-self: flex-start;
   max-width: 70vw;
-  /*
-  max-width: 700px;*/
   text-align: right;
   position: absolute;
-  margin-top: 9vh;
+  margin-top: 55px;
   overflow: hidden;
 }
 .bpvip-pic{
@@ -163,6 +139,7 @@ nav ul li{
   border-radius: 15px;
   object-fit: cover;
   display: block;
+  
 }
 .bpvip-header{
   display: flex;
@@ -350,7 +327,7 @@ h2 {
   font-size: 30px;
   /*
   font-size: 40px;*/
-  color:var(--secondary);/*about me, projects*/
+  color:var(--secondary);
   padding-top: 25px;
   padding-bottom: 20px;
   /*
@@ -386,13 +363,12 @@ a:hover{
 /*------------------------------------------*/
 /*------------------------------------------*/
 /*------------------------------------------*/
-@media (min-width:600px){
-  
+@media only screen and (min-width:600px) and (max-width:999px){
+
   section {
     padding: 5vh 10vw;
     min-height: 70vh;
   }
-
 
   /*nav bar---------------*/
   header{
@@ -419,7 +395,161 @@ a:hover{
   /*about me---------------*/
   .tech-li{
     font-size: 21px;
-    grid-template-columns: 170px 170px;
+    width: 300px;
+    line-height: 32px;
+  }
+
+  /*experience---------------
+  .experiences{
+    min-height: fit-content;
+  }
+  .bpvip{
+    justify-content: unset;
+  }
+  .bpvip-items {
+    margin-top: 0;
+    left: 20vw;
+    margin-top: 0;
+  }
+  .container-exp{
+    width: 600px;
+    height: 325px;
+    margin-bottom: 90px;
+    margin-top: 0;
+    position: relative;
+  }
+  .experience-card {
+    background-color: var(--card);
+    width: 700px;
+    height: 280px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 0px;
+    padding: 20px;
+    align-content: center;
+  }
+  .bpvip-desc, p.bpvip-desc{
+    text-align: right;
+    text-shadow: 0 0 12px var(--background);
+    margin: 15px;
+    padding: 0;
+  }
+  .bpvip-tech-li{
+    margin-left: 300px;
+    margin-top: 25px;
+    font-size: 21px;
+  }*/
+
+  /*projects---------------*/
+  h2.proj{
+    padding: 0;
+  }
+  #projects{
+    padding: 5vh 10vw;
+  }
+  li.proj-item{
+    margin-bottom: 600px;
+  }
+  #slider-item-1{
+    width: 1000px;
+    height: 500px;
+  }
+  #slider-item-2{
+    width: 1000px;
+    height: 500px;
+  }
+  #slide-1{
+    border-radius: 15px;
+  }
+  #slide-2{
+    border-radius: 15px;
+  }
+  .slide-1-cap{
+    margin-top: auto;
+    padding-top: 250px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .slide-2-cap{
+    margin-top: auto;
+    padding-top: 230px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .overlay-dark{
+    border-radius: 15px;
+  }
+  p.proj-desc{
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  h3.proj-desc{
+    margin-bottom: 10px;
+  }
+  .proj-desc-li{
+    font-size: 21px;
+  }
+
+/*-------------------------------*/
+  .overlay{
+    background-color: var(--accent);
+    opacity: 0.2;
+  }
+  .overlay:hover{
+    opacity: 0;
+  }
+  
+  p.accent{
+    margin-bottom: 25px;
+  }
+  p {
+    line-height: 35px;
+    font-size: 21px;
+  }
+  h2 {
+    font-size: 40px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  a {
+    font-size: 21px;
+  }
+}
+@media only screen and (min-width:1000px){
+  
+  section {
+    padding: 5vh 10vw;
+    min-height: 70vh;
+  }
+
+  /*nav bar---------------*/
+  header{
+    padding: 0 2vw;
+  }
+  nav ul{
+    text-align: right;
+  }
+  nav ul li{
+    margin: 5px 20px; 
+  }
+
+  /*home---------------*/
+  .container-me{
+    width: 300px;
+    height: 450px;
+    margin-bottom: 60px;
+  }
+  .icons {
+    font-size: 40px;
+    margin: 0 15px;
+  }
+
+  /*about me---------------*/
+  .tech-li{
+    font-size: 21px;
     width: 300px;
     line-height: 32px;
   }
@@ -428,8 +558,12 @@ a:hover{
   .experiences{
     min-height: fit-content;
   }
-
+  .bpvip{
+    justify-content: unset;
+  }
   .bpvip-items {
+    margin-top: 0;
+    left: 20vw;
     margin-top: 0;
   }
   .container-exp{
@@ -513,11 +647,7 @@ a:hover{
 
 /*-------------------------------*/
   .overlay{
-    border-radius: 15px;
-    height: 100%;
-    width: 100%;
     background-color: var(--accent);
-    position: absolute;
     opacity: 0.2;
   }
   .overlay:hover{
@@ -542,13 +672,5 @@ a:hover{
   }
   a {
     font-size: 21px;
-  }
-  .overlay{
-    border-radius: 15px;
-    height: 100%;
-    width: 100%;
-    background-color: var(--background);
-    position: absolute;
-    opacity: 0.65;
   }
 }
