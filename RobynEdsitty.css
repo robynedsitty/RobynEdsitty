@@ -1,7 +1,7 @@
 
 :root {
-  --text: #f0e9fc;
-  --background: #181b26;
+  --text: #ffffff;
+  --background: rgb(24, 27, 38);
   --primary: #98a8cf;
   --secondary: #80b4f7;
   --accent: #e646bd;
@@ -18,14 +18,14 @@
 .wrapper{
   width: 100vw;
   margin: 0 auto;
-  position: relative;
   background-color: var(--background);
   display: grid;
   justify-content: center;
+  position: relative;
 }
 section {
   min-height: 100vh;
-  width: 100vw;
+  min-width: 100vw;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -111,27 +111,28 @@ nav ul li{
 /*experience---------------*/
 .experiences{
   list-style: none;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 .container-exp{
-  width: 291px;
-  height: 157px;
-  position: relative;
+  display: none;
 }
-.bpvip{
+.container-bpvip{
+  background: linear-gradient(0deg, rgba(24, 27, 38, 0.8), rgba(24, 27, 38, 0.8)), url('assets/pictures/Untitleddesign.jpg');
+  border-radius: 15px;
+  background-size: cover;
+  min-height: fit-content;
   display: flex;
   margin-left: auto;
   margin-right: 0;
-  align-items: center;
   justify-content: center;
+  position: relative;
 }
 .bpvip-items {
   align-self: flex-start;
   max-width: 70vw;
   text-align: right;
-  position: absolute;
-  margin-top: 55px;
-  overflow: hidden;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .bpvip-pic{
   height: 100%;
@@ -139,7 +140,6 @@ nav ul li{
   border-radius: 15px;
   object-fit: cover;
   display: block;
-  
 }
 .bpvip-header{
   display: flex;
@@ -173,19 +173,17 @@ nav ul li{
   padding: 5vh 0;
 }
 h2.proj{
-  padding: 0 10vw;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 li.proj-item{
   margin-bottom: 35vh;
-  /*
-  margin-bottom: 600px;*/
 }
 #slider-item-1{
   width: 100vw;
   height: 25vh;
-  /*
-  width: 1000px;
-  height: 500px;*/
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -193,9 +191,6 @@ li.proj-item{
 #slider-item-2{
   width: 100vw;
   height: 25vh;
-  /*
-  width: 1000px;
-  height: 500px;*/
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -208,8 +203,6 @@ li.proj-item{
 #slide-1{
   height: 100%;
   width: 100%;
-  /*
-  border-radius: 15px;*/
   object-fit: cover;
   display: block;
   position: absolute;
@@ -217,8 +210,6 @@ li.proj-item{
 #slide-2{
   height: 100%;
   width: 100%;
-  /*
-  border-radius: 15px;*/
   object-fit: cover;
   display: block;
   position: absolute;
@@ -227,35 +218,21 @@ li.proj-item{
   position: relative;
   margin-bottom: 0;
   margin-top: 2vh;
-  /*
-  margin-top: auto;*/
   text-align: center;
   padding-top: 1vh;
   padding-left: 5vw;
   padding-right: 5vw;
-  /*
-  padding-top: 250px;
-  padding-left: 200px;
-  padding-right: 200px;*/
 }
 .slide-2-cap{
   position: relative;
   margin-bottom: 0;
   margin-top: 0;
-  /*
-  margin-top: auto;*/
   text-align: center;
   padding-top: 1vh;
   padding-left: 4vw;
   padding-right: 4vw;
-  /*
-  padding-top: 230px;
-  padding-left: 200px;
-  padding-right: 200px;*/
 }
 .overlay-dark{
-  /*
-  border-radius: 15px;*/
   height: 100%;
   width: 100%;
   background-color: var(--background);
@@ -266,9 +243,6 @@ li.proj-item{
 }
 p.proj-desc{
   line-height: 20px;
-  /*
-  line-height: 30px;
-  margin-bottom: 10px;*/
   margin-bottom: 5px;
   margin-top: 0;
   text-shadow: 0 0 10px var(--background);
@@ -282,8 +256,6 @@ p.proj-desc-accent{
 h3.proj-desc{
   text-shadow: 0 0 10px var(--background);
   margin-bottom: 5px;
-  /*
-  margin-bottom: 10px;*/
 }
 .proj-desc-li{
   list-style: none;
@@ -306,44 +278,30 @@ h3.proj-desc{
 p.accent{
   margin-top: 10px;
   margin-bottom: 15px;
-  /*
-  margin-bottom: 25px;*/
+  text-shadow: 0 0 12px black;
 }
 p {
   line-height: 25px;
-  /*
-  line-height: 35px;*/
   color: var(--text);
   font-size: 18px;
-  /*
-  font-size: 21px;*/
 }
 h1 {
   font-size: 50px;
-  color:var(--text);/*name*/
+  color:var(--text);
   text-align: center;
 }
 h2 {
   font-size: 30px;
-  /*
-  font-size: 40px;*/
   color:var(--secondary);
   padding-top: 25px;
   padding-bottom: 20px;
-  /*
-  padding-top: 35px;
-  padding-bottom: 50px;*/
 }
 h3 {
   color: var(--text);
   font-size: 25px;
-  /*
-  font-size: 30px;*/
 }
 a {
   font-size: 18px;
-  /*
-  font-size: 21px;*/
   font-weight: bold;
   text-decoration: none;
   color:var(--primary);
@@ -360,11 +318,10 @@ a:hover{
   color:var(--accent);
 }
 
-/*------------------------------------------*/
-/*------------------------------------------*/
-/*------------------------------------------*/
-@media only screen and (min-width:600px) and (max-width:999px){
-
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+@media only screen and (min-width:600px) and (max-width:1170px){
   section {
     padding: 5vh 10vw;
     min-height: 70vh;
@@ -399,50 +356,14 @@ a:hover{
     line-height: 32px;
   }
 
-  /*experience---------------
-  .experiences{
-    min-height: fit-content;
-  }
-  .bpvip{
-    justify-content: unset;
-  }
-  .bpvip-items {
-    margin-top: 0;
-    left: 20vw;
-    margin-top: 0;
-  }
-  .container-exp{
-    width: 600px;
-    height: 325px;
-    margin-bottom: 90px;
-    margin-top: 0;
-    position: relative;
-  }
-  .experience-card {
-    background-color: var(--card);
-    width: 700px;
-    height: 280px;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: 0px;
-    padding: 20px;
-    align-content: center;
-  }
-  .bpvip-desc, p.bpvip-desc{
-    text-align: right;
-    text-shadow: 0 0 12px var(--background);
-    margin: 15px;
-    padding: 0;
-  }
-  .bpvip-tech-li{
-    margin-left: 300px;
-    margin-top: 25px;
-    font-size: 21px;
-  }*/
+  /*experience---------------*/
 
   /*projects---------------*/
   h2.proj{
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 35px;
+    padding-bottom: 50px;
   }
   #projects{
     padding: 5vh 10vw;
@@ -490,15 +411,7 @@ a:hover{
     font-size: 21px;
   }
 
-/*-------------------------------*/
-  .overlay{
-    background-color: var(--accent);
-    opacity: 0.2;
-  }
-  .overlay:hover{
-    opacity: 0;
-  }
-  
+  /*-------------------------------*/
   p.accent{
     margin-bottom: 25px;
   }
@@ -518,11 +431,13 @@ a:hover{
     font-size: 21px;
   }
 }
-@media only screen and (min-width:1000px){
-  
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+@media only screen and (min-width:1170px){
   section {
-    padding: 5vh 10vw;
-    min-height: 70vh;
+    padding: 5vh 20vw;
   }
 
   /*nav bar---------------*/
@@ -563,15 +478,23 @@ a:hover{
   }
   .bpvip-items {
     margin-top: 0;
-    left: 20vw;
-    margin-top: 0;
+    left: 16vw;
+    position: absolute;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .container-exp{
+    display: unset;
     width: 600px;
     height: 325px;
     margin-bottom: 90px;
     margin-top: 0;
     position: relative;
+  }
+  .container-bpvip{
+    background-image: none;
+    align-items: unset;
+    justify-content: unset;
   }
   .experience-card {
     background-color: var(--card);
@@ -597,10 +520,13 @@ a:hover{
 
   /*projects---------------*/
   h2.proj{
-    padding: 0;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
   }
   #projects{
-    padding: 5vh 10vw;
+    padding: 5vh 20vw;
   }
   li.proj-item{
     margin-bottom: 600px;
@@ -653,8 +579,6 @@ a:hover{
   .overlay:hover{
     opacity: 0;
   }
-
-  
   p.accent{
     margin-bottom: 25px;
   }
